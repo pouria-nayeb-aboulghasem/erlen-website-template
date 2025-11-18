@@ -19,7 +19,7 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">صفحه اصلی</a>
+                        <a href="index.html" class="nav__link">صفحه اصلی</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">محصولات</a>
@@ -45,15 +45,58 @@
             </div>
 
             <div class="nav__cta">
-                <i class="ri-search-line"></i>
-                <i class="ri-user-line"></i>
-                <div>
+                <i class="ri-search-line" id="search-button"></i>
+                <i class="ri-user-line" id="login-button"></i>
+                <a href="cart.html" class="nav__cart">
                     <i class="ri-shopping-bag-2-line"></i>
                     <span>0</span>
-                </div>
+                </a>
             </div>
         </nav>
     </header>
+
+    <div class="search" id="search-content">
+        <form class="search__form">
+            <i class="ri-search-line search-icon"></i>
+            <input type="search" placeholder="نام محصول یا کد را جستجو کنید..." name="query" class="search__input" />
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+
+        <ul class="search__list">
+            <li class="search__item">
+                <a href="#" class="search__link">آرایشی</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">بهداشتی</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">خوشبو کننده</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="login" id="login-content">
+        <form class="login__form grid">
+            <h3 class="login__title">ورود/ثبت نام</h3>
+
+            <div class="login__group">
+                <div>
+                    <label for="login-email" class="login__label">شماره تماس</label>
+                    <input type="tel" placeholder="09xxxxxxxx" id="login-email" name="phoneNumber"
+                        class="login__input" />
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="button login__button">
+                    دریافت رمز یکبار مصرف
+                </button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
 
     <div class="carousel">
         <div class="carousel__container">
@@ -93,90 +136,7 @@
                     <h3><i class="ri-price-tag-3-fill"></i>جدیدترین محصولات </h3>
                 </header>
 
-                <div class="products__swiper swiper">
-                    <ul class="products__list swiper-wrapper">
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
 
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
             </section>
         </div>
@@ -246,89 +206,271 @@
                     <h3><i class="ri-sparkling-2-fill"></i>محصولات برگزیده </h3>
                 </header>
 
-                <div class="products__swiper swiper">
-                    <ul class="products__list swiper-wrapper">
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Perfume')" id="defaultOpen">عطریات</button>
+                    <button class="tablinks" onclick="openCity(event, 'Cosmetic')">آرایشی</button>
+                    <button class="tablinks" onclick="openCity(event, 'Smell')">خوشبو کننده</button>
+                </div>
 
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
+                <div id="Perfume" class="tab-content">
+                    <div class="products__swiper swiper">
+                        <ul class="products__list swiper-wrapper">
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
 
-                        <li class="products__item swiper-slide">
-                            <a href="#" class="products__link">
-                                <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
-                                <div class="products__price">
-                                    <span>127000 تومان</span>
-                                    <span><del>185000 تومان </del> <b>10%</b></span>
-                                </div>
-                                <figure class="products__figure">
-                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
-                                        class="products__img">
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="Cosmetic" class="tab-content">
+                    <div class="products__swiper swiper">
+                        <ul class="products__list swiper-wrapper">
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="Smell" class="tab-content">
+                    <div class="products__swiper swiper">
+                        <ul class="products__list swiper-wrapper">
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+
+                            <li class="products__item swiper-slide">
+                                <a href="#" class="products__link">
+                                    <h4 class="products__title">ریمل حجم دهنده بیگ بولد مدل ایزادورا</h4>
+                                    <div class="products__price">
+                                        <span>127000 تومان</span>
+                                        <span><del>185000 تومان </del> <b>10%</b></span>
+                                    </div>
+                                    <figure class="products__figure">
+                                        <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                            class="products__img">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>

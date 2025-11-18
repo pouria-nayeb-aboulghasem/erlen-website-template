@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">صفحه اصلی</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">محصولات</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">بلاگ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">درباره ما</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">تماس با ما</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="ri-menu-3-line"></i>
+            </div>
+
+            <div class="nav__cta">
+                <i class="ri-search-line" id="search-button"></i>
+                <i class="ri-user-line" id="login-button"></i>
+                <a href="cart.html" class="nav__cart">
+                    <i class="ri-shopping-bag-2-line"></i>
+                    <span>0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search" id="search-content">
+        <form class="search__form">
+            <i class="ri-search-line search-icon"></i>
+            <input type="search" placeholder="نام محصول یا کد را جستجو کنید..." name="query" class="search__input" />
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+
+        <ul class="search__list">
+            <li class="search__item">
+                <a href="#" class="search__link">آرایشی</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">بهداشتی</a>
+            </li>
+            <li class="search__item">
+                <a href="#" class="search__link">خوشبو کننده</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="login" id="login-content">
+        <form class="login__form grid">
+            <h3 class="login__title">ورود/ثبت نام</h3>
+
+            <div class="login__group">
+                <div>
+                    <label for="login-email" class="login__label">شماره تماس</label>
+                    <input type="tel" placeholder="09xxxxxxxx" id="login-email" name="phoneNumber"
+                        class="login__input" />
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="button login__button">
+                    دریافت رمز یکبار مصرف
+                </button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <main id="main" class="main">
+
+        <div class="cart">
+            <div class="cart__container container">
+                <div class="cart__content">
+
+                    <nav class="breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="index.html" class="breadcrumb__link">خانه</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                سبد خرید
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="cart__data">
+
+                        <ul class="cart__list">
+                            <li class="cart__item">
+                                <span>تصویر</span>
+                                <span>نام</span>
+                                <span>تعداد</span>
+                                <span>مبلغ</span>
+                            </li>
+                            <li class="cart__item">
+                                <span>
+                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                        class="cart__img">
+                                </span>
+                                <span>ریمل حجم دهنده بیگ بولد مدل ایزادورا</span>
+                                <span>
+                                    <button class="cart__button">+</button>
+                                    1
+                                    <button class="cart__button">-</button>
+                                </span>
+                                <span>
+                                    127,000 تومان
+                                </span>
+                            </li>
+                            <li class="cart__item">
+                                <span>
+                                    <img src="assets/imgs/products/1727879092-dark-patchouli.png" alt=""
+                                        class="cart__img">
+                                </span>
+                                <span>ریمل حجم دهنده بیگ بولد مدل ایزادورا</span>
+                                <span>
+                                    <button class="cart__button">+</button>
+                                    1
+                                    <button class="cart__button">-</button>
+                                </span>
+                                <span>
+                                    127,000 تومان
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div class="cart__next">
+                            <div class="cart__total">
+                                <span>جمع کل</span>
+                                <span>254,000 تومان</span>
+                            </div>
+
+                            <hr>
+
+                            <br>
+
+                            <div>
+                                <a href="checkout.html" class="cart__button cart__button--block">
+                                    تکمیل اطلاعات و پرداخت
+                                    <i class="ri-arrow-left-line"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="footer">
+        <div class="footer__mask">
+
+            <div class="footer__data">
+                <ul class="footer__services">
+                    <li class="footer__services__item">
+                        <i class="ri-truck-line"></i>
+                        <p>تحویل اکسپرس</p>
+                    </li>
+                    <li class="footer__services__item">
+                        <i class="ri-medal-line"></i>
+                        <p>ضمانت اصل کالا</p>
+                    </li>
+                    <li class="footer__services__item">
+                        <i class="ri-dropbox-fill"></i>
+                        <p>بازگشت کالا</p>
+                    </li>
+                    <li class="footer__services__item">
+                        <i class="ri-phone-line"></i>
+                        <p>پشتیبانی تلفنی</p>
+                    </li>
+                    <li class="footer__services__item">
+                        <i class="ri-verified-badge-line"></i>
+                        <p>ارسال به سراسر کشور</p>
+                    </li>
+                    <li class="footer__services__item">
+                        <i class="ri-customer-service-2-line"></i>
+                        <p>مشاوره رایگان</p>
+                    </li>
+                </ul>
+
+                <div class="footer__info container">
+
+                    <section class="footer__item">
+                        <h5>ارلن</h5>
+                        <p>آشنایی با فروشگاه مواد و شیشه آلات شیمیایی</p>
+                    </section>
+
+                    <section class="footer__item">
+                        <h5>فروشگاه</h5>
+
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">لیست محصولات</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">سوالات متداول</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">نحوه خرید از سایت</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="footer__item">
+                        <h5>دسترسی سریع</h5>
+
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">قوانین و مقررات</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">درباره ما</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">تماس با ما</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">نقشه سایت</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <div class="footer__item">
+                        <section>
+                            <h5>آدرس</h5>
+                            <p>تهران، شهرک المپیک و ...</p>
+                        </section>
+                        <section>
+                            <h5>تلفن های تماس</h5>
+                            <p>021-255424551</p>
+                        </section>
+                    </div>
+                </div>
+
+                <ul class="footer__social">
+                    <li class="footer__social__item">
+                        <a href="#" class="footer__social__link">
+                            <i class="ri-telegram-fill"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social__item">
+                        <a href="#" class="footer__social__link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer__copyright">
+                    <p><a href="#">erlen.ir</a> - حقوق مادی و معنوی فروشگاه ارلن محفوظ است</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
